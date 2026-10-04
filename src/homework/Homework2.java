@@ -2,9 +2,9 @@ package homework;
 public class Homework2 {
     public static void  main(String[] args){
         //FIRST TASK
-        System.out.println("4");
-        for (int i = 0; i < 6; i++) {
-            for (int j = 0; j < i; j++) {
+        System.out.println("1");
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j <= i; j++) {
                 System.out.print(" *");
             }
             System.out.println();
@@ -22,11 +22,11 @@ public class Homework2 {
         //THIRD TASK
         System.out.println("3");
         int space = 10;
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 5; i++) {
             for (int s = 0; s <= space; s++) {
                 System.out.print(" ");
             }
-            for (int j = 0; j < i; j++) {
+            for (int j = 0; j <= i; j++) {
                 System.out.print(" *");
             }
             space = space - 2;
@@ -50,17 +50,17 @@ public class Homework2 {
         //FIFTH TASK
         System.out.println("5");
         space = 5;
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 5; i++) {
             for (int s = 0; s < space; s++) {
                 System.out.print(" ");
             }
-            for (int j = 0; j < i; j++) {
+            for (int j = 0; j <= i; j++) {
                 System.out.print(" *");
             }
             space--;
             System.out.println();
         }
-        space = 0;
+        space = 1;
         for (int i = 4; i > 0 ; i--) {
             for (int s = 0; s <= space; s++) {
                 System.out.print(" ");
