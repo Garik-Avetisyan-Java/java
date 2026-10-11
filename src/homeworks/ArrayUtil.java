@@ -42,7 +42,7 @@ public class ArrayUtil {
         // Խնդիր 8 — Հաշվել կենտ թվերի քանակը
             int oddNumbers = 0;
             for (int i = 0; i < numbers.length; i++) {
-                if (numbers[i] % 2 == 1 | numbers[i] % 2 == -1) oddNumbers++;
+                if (numbers[i] % 2 != 0) oddNumbers++;
             }
             System.out.println("Odd numbers count: " + oddNumbers);
         // Խնդիր 9 — Հաշվել զանգվածի էլեմենտների գումարը
