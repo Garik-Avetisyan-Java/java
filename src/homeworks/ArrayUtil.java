@@ -10,17 +10,17 @@ public class ArrayUtil {
             }
         // Խնդիր 2 — Տպել առաջին էլեմենտը
             System.out.println();
-            System.out.println("The first element of the array: " + numbers[0]);
+            System.out.println("First element: " + numbers[0]);
         // Խնդիր 3 — Տպել վերջին էլեմենտը
-            System.out.println("The last element of the array: " + numbers[numbers.length - 1]);
+            System.out.println("Last element: " + numbers[numbers.length - 1]);
         // Խնդիր 4 — Տպել զանգվածի երկարությունը
-            System.out.println("The length of the array: " + numbers.length);
+            System.out.println("Array length: " + numbers.length);
         // Խնդիր 5 — Գտնել ամենափոքր թիվը
             int min = numbers[0];
             for (int i = 1; i < numbers.length; i++) {
                 if (min > numbers[i]) min = numbers[i];
             }
-            System.out.println("Min: " + min);
+            System.out.println("Minimum: " + min);
         // Խնդիր 6 — Տպել զանգվածի մեջտեղի էլեմենտը կամ էլեմենտները
             if (numbers.length <= 2){
                 System.out.println("Can't print middle values");
