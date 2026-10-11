@@ -1,4 +1,4 @@
-package homework;
+package homeworks;
 public class Homework1 {
     public static void main(String[] args) {
         // Ունեք երկու ամբողջ թիվ x և y։ Գրել ծրագիր, որը if-ով կպարզի և կտպի՝ որը մեծ է:
