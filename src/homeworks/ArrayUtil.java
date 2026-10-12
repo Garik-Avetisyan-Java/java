@@ -61,14 +61,17 @@ public class ArrayUtil {
             }
             System.out.println("Max " + max);
         // Bonus 2 — Հաշվել դրական և բացասական թվերը
+            int zero = 0;
             int positive = 0;
             int negative = 0;
             for (int i = 0; i < numbers.length; i++) {
                if (numbers[i] > 0) positive++;
                if(numbers[i] < 0) negative++;
+               if(numbers[i] == 0) zero++;
             }
             System.out.println("Positives count: " + positive);
             System.out.println("Negative count: " + negative);
+            System.out.println("Zero count: " + zero);
         // Bonus 3 — Տպել զանգվածը հակառակ հերթականությամբ
             for (int i = numbers.length - 1; i >= 0; i--) {
                 System.out.print(numbers[i] + " ");
