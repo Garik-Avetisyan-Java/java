@@ -88,16 +88,16 @@ public class ArrayHomework {
         int currentCount = 0;
         int count = 0;
         for (int i = 0; i < numbersForBonusThree .length; i++) {
-            currentCount = 0;
             for (int j = 0; j < numbersForBonusThree.length; j++) {
                 if (numbersForBonusThree[i] == numbersForBonusThree[j]){
                     currentCount++;
-                    if(currentCount > count){
-                        count = currentCount;
-                        num = numbersForBonusThree[i];
-                    }
                 }
             }
+            if(currentCount > count){
+                count = currentCount;
+                num = numbersForBonusThree[i];
+            }
+            currentCount = 0;
         }
         System.out.println();
         System.out.println("Most frequent number: " + num);
