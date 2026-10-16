@@ -83,24 +83,24 @@ public class ArrayHomework {
                 System.out.print(numbersForBonusTwo[i] + " ");
             }
         // Bonus 3 — Գտնել ամենաշատ կրկնվող թիվը
-        int[] numbersForBonusThree = {3, 6, 3, 8, 9, 6, 2, 3, 5, 3};
-        int num = 0;
-        int currentCount = 0;
-        int count = 0;
-        for (int i = 0; i < numbersForBonusThree .length; i++) {
-            for (int j = 0; j < numbersForBonusThree.length; j++) {
-                if (numbersForBonusThree[i] == numbersForBonusThree[j]){
-                    currentCount++;
+            int[] numbersForBonusThree = {3, 6, 3, 8, 9, 6, 2, 3, 5, 3};
+            int num = 0;
+            int currentCount = 0;
+            int count = 0;
+            for (int i = 0; i < numbersForBonusThree .length; i++) {
+                for (int j = 0; j < numbersForBonusThree.length; j++) {
+                    if (numbersForBonusThree[i] == numbersForBonusThree[j]){
+                        currentCount++;
+                    }
                 }
+                if(currentCount > count){
+                    count = currentCount;
+                    num = numbersForBonusThree[i];
+                }
+                currentCount = 0;
             }
-            if(currentCount > count){
-                count = currentCount;
-                num = numbersForBonusThree[i];
-            }
-            currentCount = 0;
-        }
-        System.out.println();
-        System.out.println("Most frequent number: " + num);
-        System.out.println("Count: " + count);
+            System.out.println();
+            System.out.println("Most frequent number: " + num);
+            System.out.println("Count: " + count);
     }
 }
