@@ -68,7 +68,7 @@ public class ArrayHomework {
                     max = numbersForBonusOne[i];
                 }
             }
-            for (int i = 0; i < numbersForBonusOne.length; i++) {
+            for (int i = 1; i < numbersForBonusOne.length; i++) {
                 if (numbersForBonusOne[i] > secondMax && numbersForBonusOne[i] < max) {
                     secondMax = numbersForBonusOne[i];
                 }
