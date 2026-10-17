@@ -61,13 +61,15 @@ public class ArrayHomework {
 
         // Bonus 1 — Գտնել երկրորդ ամենամեծ թիվը
             int[] numbersForBonusOne = {4, 9, 2, 15, 7, 15, 3, 11, 6, 8};
-            int max = 0;
-            int secondMax = 0;
-            for (int i = 0; i < numbersForBonusOne.length; i++) {
-                if(max < numbersForBonusOne[i]){
+            int max = numbersForBonusOne[0];
+            int secondMax = numbersForBonusOne[0];
+            for (int i = 1; i < numbersForBonusOne.length; i++) {
+                if (numbersForBonusOne[i] > max) {
                     max = numbersForBonusOne[i];
                 }
-                if (numbersForBonusOne[i] < max && numbersForBonusOne[i] > secondMax){
+            }
+            for (int i = 0; i < numbersForBonusOne.length; i++) {
+                if (numbersForBonusOne[i] > secondMax && numbersForBonusOne[i] < max) {
                     secondMax = numbersForBonusOne[i];
                 }
             }
