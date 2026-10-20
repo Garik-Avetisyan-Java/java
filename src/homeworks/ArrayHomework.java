@@ -61,20 +61,22 @@ public class ArrayHomework {
 
         // Bonus 1 — Գտնել երկրորդ ամենամեծ թիվը
             int[] numbersForBonusOne = {4, 9, 2, 15, 7, 15, 3, 11, 6, 8};
-            int max = numbersForBonusOne[0];
-            int secondMax = numbersForBonusOne[0];
-            for (int i = 1; i < numbersForBonusOne.length; i++) {
+            int max = Integer.MIN_VALUE;
+            int secondMax = Integer.MIN_VALUE;
+            for (int i = 0; i < numbersForBonusOne.length; i++) {
                 if (numbersForBonusOne[i] > max) {
+                    secondMax = max;
                     max = numbersForBonusOne[i];
-                }
-            }
-            for (int i = 1; i < numbersForBonusOne.length; i++) {
-                if (numbersForBonusOne[i] > secondMax && numbersForBonusOne[i] < max) {
+                } else if (numbersForBonusOne[i] > secondMax
+                        && numbersForBonusOne[i] < max) {
                     secondMax = numbersForBonusOne[i];
                 }
             }
-            System.out.println("Second maximum: " + secondMax);
-
+            if (secondMax == Integer.MIN_VALUE) {
+                System.out.println("There is no second distinct maximum.");
+            } else {
+                System.out.println("Second maximum: " + secondMax);
+            }
         // Bonus 2 — Հեռացնել կրկնվող թվերը
             int[] numbersForBonusTwo = {3, 6, 3, 8, 9, 6, 2, 3, 5, 6};
             for (int i = 0; i < numbersForBonusTwo.length; i++) {
