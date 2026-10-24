@@ -107,7 +107,7 @@ public class CharArrayUtil {
             char oldChar = 'a';
             char newChar = '*';
             for (int i = 0; i < charsThree.length; i++) {
-                if (charsThree[i] == oldChar || charsThree[i] == oldChar + 32 || charsThree[i] == oldChar - 32){
+                if (charsThree[i] == oldChar){
                     charsThree[i] = newChar;
                 }
             }
@@ -155,6 +155,7 @@ public class CharArrayUtil {
                     }
                 }
             }
+            if (first.length == 0 && second.length == 0) isEqual = true;
             System.out.println("Arrays are equal: " + isEqual);
         // Bonus 3 — Հեռացնել կրկնվող սիմվոլները
             System.out.println("---------Bonus 3----------");
