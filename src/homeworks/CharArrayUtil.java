@@ -80,10 +80,6 @@ public class CharArrayUtil {
         // Խնդիր 8 — Փոխել մեծատառերը և փոքրատառերը
             System.out.println("---------Խնդիր 8----------");
             char[] charsTwo = {'J', 'a', 'v', 'a', ' ', 'i', 's', ' ', 'f', 'u', 'n', '!'};
-            // 65/A
-            // 90/Z
-            // 97/a
-            // 122/z
             for (int i = 0; i < charsTwo.length; i++) {
                 if(charsTwo[i] >= 'a' && charsTwo[i] <= 'z'){
                     charsTwo[i] = (char) (charsTwo[i] - 32);;
