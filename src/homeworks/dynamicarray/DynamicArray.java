@@ -18,7 +18,6 @@ public class DynamicArray {
         }
         array[size] = value;
         size++;
-        System.out.print(value + " ");
     }
 
 
