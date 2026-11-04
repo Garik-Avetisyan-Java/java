@@ -14,7 +14,7 @@ public class DynamicArray {
     // 4. Մեծացնել size-ի արժեքը։
     public void add(int value) {
         if (size == array.length){
-            extend(value);
+            extend();
         }else {
             array[size] = value;
             size++;
@@ -30,13 +30,12 @@ public class DynamicArray {
     //    պատճենել նոր զանգվածի մեջ։
     // 3. array փոփոխականը կապել
     //    նոր զանգվածի հետ։
-    private void extend(int val) {
+    private void extend() {
         int[] newArray = new int[size + 10];
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < size; i++) {
             newArray[i] = array[i];
         }
         array = newArray;
-        add(val);
     }
 
 
@@ -45,7 +44,7 @@ public class DynamicArray {
     // միջակայքում է, վերադարձնել էլեմենտը։
     // Հակառակ դեպքում վերադարձնել -1։
     public int getByIndex(int index) {
-        if (index <= size && index >= 0){
+        if (index < size && index >= 0){
             return array[index];
         }
         return -1;
