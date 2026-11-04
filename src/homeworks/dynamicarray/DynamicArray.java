@@ -13,7 +13,12 @@ public class DynamicArray {
     // 3. Ավելացնել նոր էլեմենտը։
     // 4. Մեծացնել size-ի արժեքը։
     public void add(int value) {
-        if (size == array.length){
+        if (size == array.length - 1){
+            array[size] = value;
+            size++;
+            System.out.println();
+            System.out.println(size + " size");
+            System.out.println(value + " val");
             extend();
         }else {
             array[size] = value;
